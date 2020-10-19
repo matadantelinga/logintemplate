@@ -23,4 +23,7 @@ a {
   margin-left: auto;
   display: flex;
   height: 100%;
+  @media (min-width: 320px) and (max-width: 767px) { 
+    height: auto;
+  }
 }

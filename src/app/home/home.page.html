@@ -1,7 +1,12 @@
 <ion-content [fullscreen]="true">
   <div class="container">
     <div class="page-wrapper">
-      <div class="left-section"></div>
+      <div class="top-section">
+        <div id="top-left-line" class="vertical-line"></div>
+        <div id="top-right-line" class="vertical-line"></div>
+        <div id="top-bottomLeft-line" class="horizontal-line"></div>
+        <div id="top-bottomRight-line" class="horizontal-line"></div>
+      </div>
       <div class="main-section">
         <ion-grid>
           <ion-row>
@@ -63,7 +68,15 @@
           <a href="#">Log In</a>
         </div>
       </div>
-      <div class="right-section"></div>
+      <div class="bottom-section">
+        <div id="bottom-left-line" class="vertical-line"></div>
+        <div id="bottom-right-line" class="vertical-line"></div>
+        <div id="bottom-topLeft-line" class="horizontal-line"></div>
+        <div id="bottom-topRight-line" class="horizontal-line"></div>
+        <div id="copyright">
+          How to push &copy; 2018
+        </div>
+      </div>
     </div>
   </div>
 </ion-content>
