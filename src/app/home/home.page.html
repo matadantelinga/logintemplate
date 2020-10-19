@@ -1,20 +1,69 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="container">
+    <div class="page-wrapper">
+      <div class="left-section"></div>
+      <div class="main-section">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="top-content">
+                <h1>How to <span>Push</span></h1>
+                <i>Notification's provider</i>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <div class="form-wrapper">
+                <form action="#" id="login-form">
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-input"
+                      placeholder="&nbsp;"
+                    />
+                    <label>Login</label>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="password"
+                      class="form-input"
+                      placeholder="&nbsp;"
+                    />
+                    <label>Password</label>
+                  </div>
+                  <div class="social-buttons">
+                    <div id="fb" class="sc-button">
+                      <img src="./assets/icon/facebook.svg" alt="" />
+                      <span> using facebook </span>
+                    </div>
+                    <div id="google" class="sc-button">
+                      <img src="./assets/icon/gplus.svg" alt="" />
+                      <span> using google </span>
+                    </div>
+                  </div>
+                  <div class="attributes-buttons">
+                    <div id="checkbox">
+                      <input type="checkbox">
+                      <label>Stay Logged in</label>
+                    </div>
+                    <a href="#" id="forgot">
+                      Forgot password?
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <div id="signup-button">
+          Don't have an account ? <a href="#">Sign Up</a>
+        </div>
+        <div id="login-button">
+          <a href="#">Log In</a>
+        </div>
+      </div>
+      <div class="right-section"></div>
+    </div>
   </div>
 </ion-content>
