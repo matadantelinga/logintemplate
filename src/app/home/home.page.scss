@@ -1,6 +1,5 @@
 .page-wrapper {
   display: flex;
-  height: 100%;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -10,7 +9,7 @@
   .bottom-section {
     min-width: 80%;
     position: relative;
-    min-height: 75px;
+    min-height: 70px;
     #top-left-line,
     #top-right-line,
     #top-bottomLeft-line,
@@ -51,7 +50,7 @@
     }
     #copyright {
       position: absolute;
-      top: 55px;
+      top: 45px;
       text-align: center;
       width: 100%;
       color: #a2a2af;
@@ -60,11 +59,10 @@
   }
   .main-section {
     background-color: #ffffff;
-    padding: 2em 2em 2.5em;
+    padding: 1.5em 1.5em 2em;
     min-width: 80%;
     position: relative;
     .top-content {
-      margin-bottom: 1em;
       h1 {
         font-style: italic;
         font-family: "Open Sans", sans-serif;
@@ -108,7 +106,7 @@
       #login-form {
         max-width: 100%;
         min-width: 65%;
-        padding: 3em 0;
+        padding: 2.5em 0;
         .input-group {
           position: relative;
           margin-bottom: 2em;
@@ -203,7 +201,24 @@
     }
   }
 
+  .vertical-line {
+    width: 3px;
+    height: 30px;
+    background-color: #000000;
+  }
+  .horizontal-line {
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+  }
+
   @media (min-width: 320px) and (max-width: 767px) {
+    .vertical-line {
+      height: 20px;
+    }
+    .horizontal-line {
+      width: 20px;
+    }
     .top-section,
     .bottom-section,
     .main-section {
@@ -293,14 +308,3 @@
   }
 }
 
-// Global styles
-.vertical-line {
-  width: 3px;
-  height: 30px;
-  background-color: #000000;
-}
-.horizontal-line {
-  width: 30px;
-  height: 3px;
-  background-color: #000000;
-}
